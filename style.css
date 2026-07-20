@@ -1,0 +1,739 @@
+/* ================================
+   RESET & BASE
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7f5;
+    color: #ffffff;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+
+/* ================================
+   HEADER - MOSQUE BANNER
+================================ */
+
+header {
+    position: relative;
+    padding: 70px 20px;
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(2, 35, 42, 0.55),
+            rgba(2, 35, 42, 0.65)
+        ),
+        url("img/mosque.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-bottom: 4px solid #f4c430;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.40);
+}
+
+
+/* STARS / EMOJI REMOVE */
+
+header::before {
+    display: none;
+}
+
+
+header h1 {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.70);
+}
+
+
+/* ================================
+   HERO SECTION - MOSQUE BACKGROUND
+================================ */
+
+.hero {
+    position: relative;
+
+    min-height: 680px;
+
+    padding: 70px 6%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    flex-wrap: wrap;
+
+
+    background-image:
+
+        linear-gradient(
+            rgba(2, 35, 42, 0.70),
+            rgba(2, 35, 42, 0.82)
+        ),
+
+        url("img/mosque.jpg");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+
+/* ================================
+   HERO TEXT
+================================ */
+
+.hero-text {
+    position: relative;
+
+    z-index: 2;
+
+    flex: 1;
+
+    min-width: 300px;
+
+    max-width: 700px;
+}
+
+
+.hero-text h2 {
+    color: #f4c430;
+
+    font-size: 40px;
+
+    line-height: 1.3;
+
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.60);
+}
+
+
+/* ================================
+   LANGUAGE BOX
+================================ */
+
+.dual-language-box {
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    padding: 25px;
+
+    margin-bottom: 28px;
+
+    background:
+        rgba(7, 30, 38, 0.82);
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.12);
+
+    border-left: 6px solid #f4c430;
+
+    border-radius:
+        0 25px 25px 0;
+
+    box-shadow:
+        0 15px 35px
+        rgba(0, 0, 0, 0.30);
+
+    backdrop-filter: blur(8px);
+}
+
+
+.lang-col {
+    flex: 1;
+
+    min-width: 230px;
+}
+
+
+.lang-col strong {
+    display: block;
+
+    color: #f4c430;
+
+    font-size: 21px;
+
+    margin-bottom: 8px;
+}
+
+
+.lang-col p {
+    font-size: 18px;
+
+    color: #f5f5f5;
+}
+
+
+/* ================================
+   FEATURES
+================================ */
+
+.hero-features {
+    list-style: none;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-features li {
+    margin-bottom: 15px;
+
+    padding: 13px 18px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    background:
+        rgba(0, 0, 0, 0.30);
+
+    border-left: 4px solid #25d366;
+
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+}
+
+
+.hero-features li:hover {
+    transform:
+        translateX(8px);
+
+    background:
+        rgba(37, 211, 102, 0.15);
+}
+
+
+/* ================================
+   SCROLL MESSAGE
+================================ */
+
+.scroll-message {
+    text-align: center;
+
+    padding: 18px;
+
+    margin-top: 20px;
+
+    background:
+        rgba(0, 0, 0, 0.40);
+
+    border-radius: 18px;
+
+    border-top: 1px solid
+        rgba(255, 255, 255, 0.15);
+
+    border-bottom: 1px solid
+        rgba(255, 255, 255, 0.15);
+}
+
+
+.scroll-message h3 {
+    color: #f4c430;
+
+    font-size: 21px;
+}
+
+
+.scroll-message p {
+    font-size: 17px;
+
+    margin-top: 5px;
+}
+
+
+/* ================================
+   TEACHER IMAGE
+================================ */
+
+.hero-img {
+    position: relative;
+
+    z-index: 2;
+
+    flex: 0 0 320px;
+
+    text-align: center;
+
+    padding: 22px;
+
+    background:
+        rgba(0, 0, 0, 0.35);
+
+    border-radius: 30px;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+        0 20px 45px
+        rgba(0, 0, 0, 0.50);
+
+    backdrop-filter: blur(8px);
+}
+
+
+.hero-img img {
+    width: 260px;
+
+    height: 370px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    border: 5px solid #f4c430;
+
+    box-shadow:
+        0 0 0 5px
+        rgba(244, 196, 48, 0.15),
+
+        0 15px 35px
+        rgba(0, 0, 0, 0.55);
+
+    transition: 0.4s ease;
+}
+
+
+.hero-img img:hover {
+    transform:
+        scale(1.03);
+}
+
+
+/* ================================
+   TEACHER TITLE
+================================ */
+
+.teacher-title {
+    display: block;
+
+    margin: 18px auto 20px;
+
+    padding: 12px 20px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111111,
+            #293238
+        );
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.20);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.35);
+}
+
+
+/* ================================
+   CONTACT BUTTON
+================================ */
+
+.btn-whatsapp {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    background:
+        linear-gradient(
+            135deg,
+            #25d366,
+            #16a34a
+        );
+
+    border-radius: 35px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.35);
+
+    transition: 0.3s ease;
+}
+
+
+.btn-whatsapp:hover {
+    transform:
+        translateY(-4px)
+        scale(1.03);
+}
+
+
+/* ================================
+   COURSES
+================================ */
+
+.courses {
+    padding: 70px 6%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8faf9,
+            #e7f2ec
+        );
+}
+
+
+.courses h2 {
+    display: inline-block;
+
+    color: #075c40;
+
+    font-size: 32px;
+
+    margin-bottom: 45px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 4px solid #f4c430;
+}
+
+
+.course-grid {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 28px;
+
+    flex-wrap: wrap;
+}
+
+
+.course-card {
+    position: relative;
+
+    width: 300px;
+
+    min-height: 260px;
+
+    padding: 30px 25px;
+
+    text-align: left;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    border-top: 6px solid #0b6b4b;
+
+    box-shadow:
+        0 12px 30px
+        rgba(0, 0, 0, 0.10);
+
+    transition: 0.35s ease;
+}
+
+
+.course-card:hover {
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 20px 40px
+        rgba(0, 0, 0, 0.18);
+}
+
+
+.course-card h3 {
+    text-align: center;
+
+    color: #075c40;
+
+    font-size: 23px;
+
+    margin-bottom: 20px;
+}
+
+
+.card-lang-section p {
+    color: #444;
+
+    font-size: 15px;
+
+    margin-bottom: 14px;
+}
+
+
+/* ================================
+   ADS SECTION
+================================ */
+
+.ads-section {
+    padding: 70px 6%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #073523,
+            #0b6b4b
+        );
+}
+
+
+.ads-container {
+    max-width: 950px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(300px, 1fr)
+        );
+
+    gap: 30px;
+}
+
+
+.ad-box {
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f0f8f3
+        );
+
+    border-radius: 20px;
+
+    border-left: 7px solid #f4c430;
+
+    box-shadow:
+        0 15px 35px
+        rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s ease;
+}
+
+
+.ad-box:hover {
+    transform:
+        translateY(-7px);
+}
+
+
+.ad-box h3 {
+    color: #075c40;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+.ad-box p {
+    color: #444;
+
+    font-size: 15px;
+
+    margin-bottom: 12px;
+}
+
+
+.btn-ad {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 13px 20px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0b6b4b,
+            #063b2a
+        );
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+
+.btn-ad:hover {
+    transform:
+        translateY(-3px);
+
+    background: #25d366;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    color: #cccccc;
+
+    background: #071414;
+
+    border-top: 3px solid #f4c430;
+}
+
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 55px 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+
+        text-align: center;
+
+        background-attachment: scroll;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .dual-language-box {
+        text-align: left;
+    }
+
+    .hero-features {
+        text-align: left;
+    }
+
+    .hero-img {
+        flex: 1 1 100%;
+
+        width: 100%;
+    }
+
+    .hero-img img {
+        width: 230px;
+
+        height: 340px;
+    }
+
+    .courses h2 {
+        font-size: 26px;
+    }
+
+    .course-card {
+        width: 100%;
+
+        max-width: 360px;
+    }
+
+    .btn-whatsapp {
+        font-size: 16px;
+
+        padding: 14px 22px;
+    }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    .hero-text h2 {
+        font-size: 26px;
+    }
+
+    .hero-img img {
+        width: 210px;
+
+        height: 310px;
+    }
+
+    .lang-col p {
+        font-size: 16px;
+    }
+
+    .hero-features li {
+        font-size: 15px;
+    }
+}   
+
