@@ -88,14 +88,12 @@ header h1 {
 
     flex-wrap: wrap;
 
-
     background-image:
 
         linear-gradient(
             rgba(2, 35, 42, 0.70),
             rgba(2, 35, 42, 0.82)
         ),
-
         url("mosque.jpg");
 
 
